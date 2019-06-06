@@ -15,4 +15,10 @@ public class IceCreamManager: NSObject {
         return storyboard.instantiateInitialViewController() ?? UIViewController()
     }
 
+    public static func show(in vc: UIViewController) {
+        let bundle = Bundle(for: PickFlavorViewController.self)
+        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
+        let pickerFlavour = storyboard.instantiateInitialViewController() ?? UIViewController()
+        vc.present(pickerFlavour, animated: true, completion: nil)
+    }
 }
