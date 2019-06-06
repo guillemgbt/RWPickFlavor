@@ -21,4 +21,11 @@ public class IceCreamManager: NSObject {
         let pickerFlavour = storyboard.instantiateInitialViewController() ?? UIViewController()
         vc.present(pickerFlavour, animated: true, completion: nil)
     }
+    
+    public static func showReactive(in vc: UIViewController) {
+        
+        let vcReactive = ReactiveViewController()
+        vc.present(vcReactive, animated: true, completion: nil)
+        
+    }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C90DF3B222A933F1001E51EA /* IceCreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF3B122A933F0001E51EA /* IceCreamManager.swift */; };
+		C92A9F2822A946FC007F7E3E /* ReactiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */; };
+		C92A9F2922A946FC007F7E3E /* ReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */; };
 		C95AC6F322A91A2500DEA348 /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C990FACA22A91E3B00A9953F /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABC22A91E3A00A9953F /* PickFlavorViewController.swift */; };
 		C990FACB22A91E3B00A9953F /* PickFlavorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABD22A91E3A00A9953F /* PickFlavorDataSource.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		5FA977D8562841725AFBE1A6 /* libPods-RWPickFlavor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWPickFlavor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90DF3B122A933F0001E51EA /* IceCreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamManager.swift; sourceTree = "<group>"; };
+		C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveViewController.swift; sourceTree = "<group>"; };
+		C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReactiveViewController.xib; sourceTree = "<group>"; };
 		C95AC6EE22A91A2500DEA348 /* RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWPickFlavor.h; sourceTree = "<group>"; };
 		C95AC6F222A91A2500DEA348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 				5FA977D8562841725AFBE1A6 /* libPods-RWPickFlavor.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92A9F2522A946C6007F7E3E /* ReactiveVC */ = {
+			isa = PBXGroup;
+			children = (
+				C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */,
+				C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */,
+			);
+			path = ReactiveVC;
 			sourceTree = "<group>";
 		};
 		C95AC6E422A91A2500DEA348 = {
@@ -113,6 +126,7 @@
 		C990FAC022A91E3A00A9953F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C92A9F2522A946C6007F7E3E /* ReactiveVC */,
 				C990FAC122A91E3A00A9953F /* ScoopCell.swift */,
 				C990FAC222A91E3A00A9953F /* ScoopView.swift */,
 				C990FAC322A91E3A00A9953F /* Main.storyboard */,
@@ -217,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C990FACF22A91E3B00A9953F /* Main.storyboard in Resources */,
+				C92A9F2922A946FC007F7E3E /* ReactiveViewController.xib in Resources */,
 				C990FAD222A91E3B00A9953F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +270,7 @@
 			files = (
 				C990FACA22A91E3B00A9953F /* PickFlavorViewController.swift in Sources */,
 				C990FACE22A91E3B00A9953F /* ScoopView.swift in Sources */,
+				C92A9F2822A946FC007F7E3E /* ReactiveViewController.swift in Sources */,
 				C990FACB22A91E3B00A9953F /* PickFlavorDataSource.swift in Sources */,
 				C990FACD22A91E3B00A9953F /* ScoopCell.swift in Sources */,
 				C990FAD122A91E3B00A9953F /* Flavor.swift in Sources */,
@@ -330,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -413,6 +429,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RWPickFlavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,6 +462,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RWPickFlavor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

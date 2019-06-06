@@ -30,7 +30,7 @@ import UIKit
 import Alamofire
 import MBProgressHUD
 
-public class PickFlavorViewController: UIViewController {
+class PickFlavorViewController: UIViewController {
   
   // MARK: Instance Variables
   
@@ -53,7 +53,7 @@ public class PickFlavorViewController: UIViewController {
   
   // MARK: View Lifecycle
   
-  public override func viewDidLoad() {
+  override func viewDidLoad() {
     super.viewDidLoad()
     collectionView.delegate = self
     loadFlavors()
