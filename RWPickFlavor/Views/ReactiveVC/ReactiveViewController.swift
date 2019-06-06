@@ -13,7 +13,6 @@ class ReactiveViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     let viewModel = ReactiveViewModel()
-    
     private let bag = DisposeBag()
    
     init() {
