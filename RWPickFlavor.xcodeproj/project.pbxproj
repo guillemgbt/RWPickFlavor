@@ -10,6 +10,7 @@
 		C90DF3B222A933F1001E51EA /* IceCreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF3B122A933F0001E51EA /* IceCreamManager.swift */; };
 		C92A9F2822A946FC007F7E3E /* ReactiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */; };
 		C92A9F2922A946FC007F7E3E /* ReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */; };
+		C94A676722A963BA004E9322 /* ReactiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94A676622A963BA004E9322 /* ReactiveViewModel.swift */; };
 		C95AC6F322A91A2500DEA348 /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C990FACA22A91E3B00A9953F /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABC22A91E3A00A9953F /* PickFlavorViewController.swift */; };
 		C990FACB22A91E3B00A9953F /* PickFlavorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABD22A91E3A00A9953F /* PickFlavorDataSource.swift */; };
@@ -28,6 +29,7 @@
 		C90DF3B122A933F0001E51EA /* IceCreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamManager.swift; sourceTree = "<group>"; };
 		C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveViewController.swift; sourceTree = "<group>"; };
 		C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReactiveViewController.xib; sourceTree = "<group>"; };
+		C94A676622A963BA004E9322 /* ReactiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveViewModel.swift; sourceTree = "<group>"; };
 		C95AC6EE22A91A2500DEA348 /* RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWPickFlavor.h; sourceTree = "<group>"; };
 		C95AC6F222A91A2500DEA348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				C92A9F2622A946FC007F7E3E /* ReactiveViewController.swift */,
 				C92A9F2722A946FC007F7E3E /* ReactiveViewController.xib */,
+				C94A676622A963BA004E9322 /* ReactiveViewModel.swift */,
 			);
 			path = ReactiveVC;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				C990FACC22A91E3B00A9953F /* RGBAColorFromString.swift in Sources */,
 				C990FAD022A91E3B00A9953F /* IceCreamView.swift in Sources */,
 				C90DF3B222A933F1001E51EA /* IceCreamManager.swift in Sources */,
+				C94A676722A963BA004E9322 /* ReactiveViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

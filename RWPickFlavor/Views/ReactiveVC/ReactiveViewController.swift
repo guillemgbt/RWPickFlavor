@@ -7,16 +7,14 @@
 //
 
 import UIKit
+import RxSwift
 
 class ReactiveViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    let viewModel = ReactiveViewModel()
     
-    private var taps = 0 {
-        didSet{
-            label?.text = "\(taps)"
-        }
-    }
+    private let bag = DisposeBag()
    
     init() {
         super.init(nibName: "ReactiveViewController",
@@ -30,12 +28,16 @@ class ReactiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        taps = 0
+        bindTabs()
+    }
+    
+    private func bindTabs() {
+        viewModel.tabs.subscribe(onNext: { [weak self] (taps) in
+            self?.label.text = "\(taps)"
+        }).disposed(by: bag)
     }
 
     @IBAction func buttonAction(_ sender: Any) {
-        taps += 1
+        viewModel.handleTab()
     }
 }
