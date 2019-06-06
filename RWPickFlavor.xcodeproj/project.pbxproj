@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90DF3B222A933F1001E51EA /* IceCreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF3B122A933F0001E51EA /* IceCreamManager.swift */; };
 		C95AC6F322A91A2500DEA348 /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C990FACA22A91E3B00A9953F /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABC22A91E3A00A9953F /* PickFlavorViewController.swift */; };
 		C990FACB22A91E3B00A9953F /* PickFlavorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990FABD22A91E3A00A9953F /* PickFlavorDataSource.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		5FA977D8562841725AFBE1A6 /* libPods-RWPickFlavor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWPickFlavor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90DF3B122A933F0001E51EA /* IceCreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamManager.swift; sourceTree = "<group>"; };
 		C95AC6EE22A91A2500DEA348 /* RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95AC6F122A91A2500DEA348 /* RWPickFlavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWPickFlavor.h; sourceTree = "<group>"; };
 		C95AC6F222A91A2500DEA348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		C990FABB22A91E3A00A9953F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C90DF3B122A933F0001E51EA /* IceCreamManager.swift */,
 				C990FABC22A91E3A00A9953F /* PickFlavorViewController.swift */,
 				C990FABD22A91E3A00A9953F /* PickFlavorDataSource.swift */,
 			);
@@ -257,6 +260,7 @@
 				C990FAD122A91E3B00A9953F /* Flavor.swift in Sources */,
 				C990FACC22A91E3B00A9953F /* RGBAColorFromString.swift in Sources */,
 				C990FAD022A91E3B00A9953F /* IceCreamView.swift in Sources */,
+				C90DF3B222A933F1001E51EA /* IceCreamManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
